@@ -1,0 +1,22 @@
+create database if not EXISTIS opa;
+
+
+create table if not EXISTS ourico(
+
+    idOurico int PRIMARY key AUTO_INCREMENT,
+    nome varchar(30), 
+    DescOurico varchar (200),
+    idade int (3),
+    peso float (6),
+    altura float (4), 
+    personalidade varchar (30),
+    nacionalidade varchar (40),
+    dieta varchar (20),
+    posicao_politica varchar (30),
+    religião varchar (50),
+
+); 
+
+
+
+insert into ourico values (null, "Carlos", "Carlos é um ouriço cheiroso e gosta de músicas country", 3,  3.23,  15, "Pacífico", "Tailandes", "Carnívoro",  "Centro", "Umbandista"), (null, "Periclão", "Periclão não é um ouriço para qualquer, com personalidade forte ele chega chegando no OPA", 40, 100, 30, "Sofredor e amoroso", "Carioca", "Fast Food", "Pagode", "Reza pra god"), (null, "Bruninha", "Muitos chama a Bruninha de patricinha, mas ela é uma ouriço rica de familia nobre e com uma personalidade marcante", 23, 5, 20, "Despojada e autêntica", "Alphaville(SP)", "Apenas comida low carb", "A favor do amor e contra cotas", "Cristã desde 2018")
